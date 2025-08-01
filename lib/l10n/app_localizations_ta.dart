@@ -39,12 +39,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get harvestBot => 'ஹார்வெஸ்ட்பாட்';
 
   @override
-  String get pestDetection => 'பூச்சி கண்டறிதல்';
-
-  @override
-  String get community => 'சமூகம்';
-
-  @override
   String get yourFarmingCompanion => 'உங்கள் விவசாய நண்பன்';
 
   @override
@@ -181,27 +175,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get talkToHarvestBot => 'ஹார்வெஸ்ட்பாட்-க்கு பேசுங்கள்';
 
   @override
-  String get createPost => 'இடுகை உருவாக்க';
-
-  @override
-  String get addComment => 'கருத்து சேர்க்க...';
-
-  @override
-  String get post => 'இடுகை';
-
-  @override
-  String get noPostsYet => 'இன்னும் இடுகைகள் இல்லை.';
-
-  @override
-  String get whatsOnYourMind => 'உங்கள் மனதில் என்ன?';
-
-  @override
-  String get welcomeToFarmFlux => 'FarmFlux இல் உங்களை வரவேற்கிறோம்...';
-
-  @override
-  String get shareYourThoughts => 'உங்கள் எண்ணங்களைப் பகிரவும், கேள்விகள் கேட்கவும், சக விவசாயிகளுடன் இணைந்தொழுகவும்.';
-
-  @override
   String get somethingWentWrong => 'ஏதோ தவறு நடந்தது';
 
   @override
@@ -209,15 +182,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tryAgain => 'மீண்டும் முயற்சிக்கவும்';
-
-  @override
-  String get welcomeToCommunity => 'சமூகத்திற்கு வரவேற்கிறோம்!';
-
-  @override
-  String get shareYourFarmingExperiences => 'உங்கள் விவசாய அனுபவங்கள், குறிப்புகளைப் பகிரவும் மற்றும் சக விவசாயிகளுடன் இணைந்தொழுகவும்';
-
-  @override
-  String get createFirstPost => 'முதல் இடுகையை உருவாக்கவும்';
 
   @override
   String get currentWeather => 'தற்போதைய காலநிலை';
@@ -334,12 +298,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiChatDesc => 'தனிப்பட்ட ஆலோசனை, பயிர் பரிந்துரைகள் மற்றும் உங்கள் விவசாய கேள்விகளுக்கான பதில்களுக்கு எங்கள் AI-இயங்கும் விவசாய நிபுணரிடம் அரட்டையடிக்கவும்.';
 
   @override
-  String get communityFeature => 'விவசாய சமூகம்';
-
-  @override
-  String get communityDesc => 'சக விவசாயிகளுடன் இணைக்கவும், அனுபவங்களைப் பகிரவும், கேள்விகள் கேட்கவும் மற்றும் விவசாய சமூகத்திலிருந்து கற்றுக்கொள்ளவும்.';
-
-  @override
   String get multiLanguageFeature => 'பல மொழி ஆதரவு';
 
   @override
@@ -364,9 +322,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get gettingStartedStep4 => '4. தனிப்பயனாக்கப்பட்ட விவசாய ஆலோசனைக்காக ஹார்வெஸ்ட்பாட்டுடன் அரட்டையடிக்கவும்';
 
   @override
-  String get gettingStartedStep5 => '5. மற்ற விவசாயிகளுடன் இணைவதற்கு சமூகத்தில் சேரவும்';
-
-  @override
   String get weatherUsageTitle => 'வானிலை அம்சங்களைப் பயன்படுத்துதல்';
 
   @override
@@ -377,12 +332,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get aiChatUsageDesc => 'பயிர்கள், நோய்கள், உரங்கள் அல்லது ஏதேனும் விவசாய தலைப்பு பற்றி கேள்விகள் கேளுங்கள். AI உங்கள் உரையாடலின் அடிப்படையில் சூழல்-விழிப்புணர்வு பதில்களை வழங்குகிறது.';
-
-  @override
-  String get communityUsageTitle => 'சமூக அம்சங்களைப் பயன்படுத்துதல்';
-
-  @override
-  String get communityUsageDesc => 'இடுகைகள், புகைப்படங்கள் மற்றும் அனுபவங்களைப் பகிரவும். மற்றவர்களின் இடுகைகளில் கருத்து தெரிவித்து சக விவசாயிகளுடன் தொடர்புகளை உருவாக்குங்கள்.';
 
   @override
   String get troubleshootingTitle => 'சரிசெய்தல்';
@@ -589,10 +538,4 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get otpResentSuccessfully => 'OTP வெற்றிகரமாக மீண்டும் அனுப்பப்பட்டது';
-
-  @override
-  String get aiDisclaimer => 'AI உருவாக்கிய முடிவுகள் மறுப்பு';
-
-  @override
-  String get aiDisclaimerDesc => 'AI மூலம் உருவாக்கப்பட்ட நோயறிதல் மற்றும் பரிந்துரைகள் பிழைகள் இருக்கலாம். முக்கிய முடிவுகளுக்கு விவசாய நிபுணர்களை அணுகவும். இந்த தகவலை கூடுதல் வழிகாட்டியாக மட்டும் பயன்படுத்தவும்.';
 }

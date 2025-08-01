@@ -21,7 +21,6 @@ import 'ai_chat_page.dart';
 import 'extended_forecast_page.dart';
 import 'help_support_page.dart';
 import 'about_page.dart';
-import '../../../../screens/community_feed.dart';
 
 class FarmFluxApp extends StatelessWidget {
   const FarmFluxApp({super.key});
@@ -52,7 +51,6 @@ class _MainScreenState extends State<MainScreen>
 
   // Cached screen instances for performance
   Widget? _homeScreen;
-  Widget? _communityScreen;
 
   // Navigation throttling to prevent rapid taps
   bool _isNavigating = false;
@@ -64,11 +62,6 @@ class _MainScreenState extends State<MainScreen>
         return _homeScreen ??= RepaintBoundary(
           key: const ValueKey('home'),
           child: const HomeScreen(),
-        );
-      case 1:
-        return _communityScreen ??= RepaintBoundary(
-          key: const ValueKey('community'),
-          child: CommunityFeedPage(),
         );
       default:
         return _homeScreen ??= RepaintBoundary(
@@ -115,7 +108,6 @@ class _MainScreenState extends State<MainScreen>
         index: _currentIndex,
         children: [
           _getScreen(0), // Home
-          _getScreen(1), // Community
         ],
       ),
       bottomNavigationBar: _buildOptimizedBottomNavigationBar(localizations),
@@ -161,15 +153,6 @@ class _MainScreenState extends State<MainScreen>
                     label: localizations.harvestBot,
                     index: 1,
                     isSelected: false, // Never selected since it navigates away
-                  ),
-                ),
-                Expanded(
-                  child: _buildOptimizedNavItem(
-                    icon: Icons.people_alt_rounded,
-                    label: localizations.community,
-                    index: 2,
-                    isSelected:
-                        _currentIndex == 1, // Community is now screen index 1
                   ),
                 ),
               ],
@@ -258,9 +241,9 @@ class _MainScreenState extends State<MainScreen>
 
     // Track navigation performance
     trackNavigation('navigation_tap', () {
-      // Prevent unnecessary navigation calls
+      // Only handle HarvestBot navigation since we only have Home screen
       if (index == 1) {
-        // Handle HarvestBot navigation separately (doesn't change current index)
+        // Handle HarvestBot navigation separately
         _isNavigating = true;
         NavigationPerformanceTracker.startNavigation('harvestbot_navigation');
 
@@ -274,25 +257,21 @@ class _MainScreenState extends State<MainScreen>
         return;
       }
 
-      // Calculate the actual screen index (community is now index 2, maps to screen index 1)
-      final int targetIndex = index > 1 ? index - 1 : index;
-
-      // Only update if actually changing screens
-      if (targetIndex != _currentIndex) {
+      // For any other index, ensure we stay on home (index 0)
+      if (_currentIndex != 0) {
         _isNavigating = true;
-
-        NavigationPerformanceTracker.startNavigation('tab_switch_$targetIndex');
+        NavigationPerformanceTracker.startNavigation('tab_switch_0');
 
         // Track the setState operation that might cause frame drops
         FrameDropMonitor.trackOperation('setState_navigation', () {
           setState(() {
-            _currentIndex = targetIndex;
+            _currentIndex = 0;
           });
         });
 
         // Release navigation lock after UI update completes
         WidgetsBinding.instance.addPostFrameCallback((_) {
-          NavigationPerformanceTracker.endNavigation('tab_switch_$targetIndex');
+          NavigationPerformanceTracker.endNavigation('tab_switch_0');
           _isNavigating = false;
         });
       }
@@ -1842,24 +1821,6 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
         }
       }
     }
-  }
-}
-
-class CommunityScreen extends StatelessWidget {
-  const CommunityScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // Ensure consistent system UI overlay style
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        systemNavigationBarColor: Colors.white,
-        systemNavigationBarIconBrightness: Brightness.dark,
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.dark,
-      ),
-    );
-    return CommunityFeedPage();
   }
 }
 

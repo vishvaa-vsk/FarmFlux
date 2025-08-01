@@ -26,7 +26,6 @@ import 'core/constants/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
-import 'screens/community_feed.dart';
 import 'utils/startup_performance.dart';
 import 'widgets/ultra_minimal_startup_screen.dart';
 
@@ -247,10 +246,7 @@ class _FarmFluxAppState extends State<FarmFluxApp> {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      routes: {
-        '/home': (context) => const MainScreen(),
-        '/community': (context) => CommunityFeedPage(),
-      },
+      routes: {'/home': (context) => const MainScreen()},
       home: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {

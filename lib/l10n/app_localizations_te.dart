@@ -9,590 +9,533 @@ class AppLocalizationsTe extends AppLocalizations {
   AppLocalizationsTe([String locale = 'te']) : super(locale);
 
   @override
-  String get appTitle => 'హార్వెస్ట్ హబ్';
+  String get appTitle => 'FarmFlux';
 
   @override
-  String get welcomeMessage => 'హార్వెస్ట్ హబ్‌కు స్వాగతం!';
+  String get welcomeMessage => 'Welcome to FarmFlux!';
 
   @override
-  String get selectLanguage => 'ఇష్టమైన భాషను ఎంచుకోండి';
+  String get selectLanguage => 'Select Preferred Language';
 
   @override
-  String get english => 'ఆంగ్లం';
+  String get english => 'English';
 
   @override
-  String get hindi => 'హిందీ';
+  String get hindi => 'Hindi';
 
   @override
-  String get tamil => 'తమిళం';
+  String get tamil => 'Tamil';
 
   @override
-  String get telugu => 'తెలుగు';
+  String get telugu => 'Telugu';
 
   @override
-  String get malayalam => 'మలయాళం';
+  String get malayalam => 'Malayalam';
 
   @override
-  String get home => 'హోమ్';
+  String get home => 'Home';
 
   @override
-  String get harvestBot => 'హార్వెస్ట్ బాట్';
+  String get harvestBot => 'HarvestBot';
 
   @override
-  String get pestDetection => 'పురుగుల గుర్తింపు';
+  String get yourFarmingCompanion => 'Your farming companion';
 
   @override
-  String get community => 'సమూహం';
+  String get editProfileSettings => 'Edit Profile Settings';
 
   @override
-  String get yourFarmingCompanion => 'మీ కృషి సహచరుడు';
+  String get logout => 'Logout';
 
   @override
-  String get editProfileSettings => 'ప్రొఫైల్ సెట్టింగ్స్ ఎడిట్ చేయండి';
+  String get loading => 'Loading...';
 
   @override
-  String get logout => 'లాగ్ అవుట్';
+  String get errorLoadingUserData => 'Error loading user data';
 
   @override
-  String get loading => 'లోడ్ చేస్తోంది...';
-
-  @override
-  String get errorLoadingUserData => 'ఉపయోగదారు డేటా లోడ్ చేయడంలో పొరపాటు';
-
-  @override
-  String get weatherForecast => 'వాతావరణ అంచనాలు';
+  String get weatherForecast => 'Weather Forecast';
 
   @override
   String feelsLike(Object value) {
-    return 'అనుభవం: $value°C';
+    return 'Feels Like: $value°C';
   }
 
   @override
   String wind(Object speed, Object dir) {
-    return 'గాలి: $speed కిమీ/గంట ($dir)';
+    return 'Wind: $speed km/h ($dir)';
   }
 
   @override
   String pressure(Object value) {
-    return 'ఒత్తిడి: $value mb';
+    return 'Pressure: $value mb';
   }
 
   @override
   String humidity(Object value) {
-    return 'ఆర్ద్రత: $value%';
+    return 'Humidity: $value%';
   }
 
   @override
   String visibility(Object value) {
-    return 'దృశ్యత: $value కిమీ';
+    return 'Visibility: $value km';
   }
 
   @override
   String uvIndex(Object value) {
-    return 'UV సూచిక: $value';
+    return 'UV Index: $value';
   }
 
   @override
   String cloudCover(Object value) {
-    return 'మేఘ కవర్: $value%';
+    return 'Cloud Cover: $value%';
   }
 
   @override
-  String get threeDayForecast => '3-రోజుల అంచనాలు';
+  String get threeDayForecast => '3-Day Forecast';
 
   @override
-  String get thirtyDayForecast => '30-రోజుల అంచనాలు';
+  String get thirtyDayForecast => '30-Day Forecast';
 
   @override
   String weatherForecastCalendar(Object startDate, Object endDate) {
-    return 'వాతావరణ అంచనాలు: $startDate - $endDate';
+    return 'Weather Forecast: $startDate - $endDate';
   }
 
   @override
-  String get viewMore => 'మరింత చూడండి';
+  String get viewMore => 'View More';
 
   @override
-  String get failedToLoadWeather => 'వాతావరణ డేటా లోడ్ చేయడంలో విఫలమైంది';
+  String get failedToLoadWeather => 'Failed to load weather data';
 
   @override
-  String get farmingTip => 'కృషి సూచన';
+  String get farmingTip => 'Farming Tip';
 
   @override
-  String get noFarmingTip => 'కృషి సూచన అందుబాటులో లేదు';
+  String get noFarmingTip => 'No farming tip available';
 
   @override
-  String get recommendedCrop => 'సిఫారసు చేసిన పంట';
+  String get recommendedCrop => 'Recommended Crop';
 
   @override
-  String get noCropRecommendation => 'పంట సిఫారసు అందుబాటులో లేదు';
+  String get noCropRecommendation => 'No crop recommendation available';
 
   @override
-  String get locationServicesRequired => 'ఈ యాప్‌ను ఉపయోగించడానికి స్థానం సేవలు అవసరం.';
+  String get locationServicesRequired => 'Location services are required to use this app.';
 
   @override
-  String get failedToLoadInsights => 'అంతర్దృష్టులను లోడ్ చేయడంలో విఫలమైంది';
+  String get failedToLoadInsights => 'Failed to load insights';
 
   @override
-  String get sendOTP => 'OTP పంపండి';
+  String get sendOTP => 'Send OTP';
 
   @override
-  String get verifyOTP => 'OTP ధృవీకరించండి';
+  String get verifyOTP => 'Verify OTP';
 
   @override
-  String get name => 'పేరు';
+  String get name => 'Name';
 
   @override
-  String get phoneNumber => 'ఫోన్ నంబర్';
+  String get phoneNumber => 'Phone Number';
 
   @override
-  String get enterOTP => 'OTP నమోదు చేయండి';
+  String get enterOTP => 'Enter OTP';
 
   @override
-  String get pleaseEnterNameAndPhone => 'దయచేసి మీ పేరు మరియు ఫోన్ నంబర్ నమోదు చేయండి';
+  String get pleaseEnterNameAndPhone => 'Please enter your name and phone number';
 
   @override
-  String get invalidOTP => 'చెల్లని OTP';
+  String get invalidOTP => 'Invalid OTP';
 
   @override
-  String get failedToSendOTP => 'OTP పంపడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.';
+  String get failedToSendOTP => 'Failed to send OTP. Please try again.';
 
   @override
-  String get failedToSignIn => 'సైన్ ఇన్ చేయడంలో విఫలమైంది';
+  String get failedToSignIn => 'Failed to sign in';
 
   @override
-  String get enableLocationServices => 'స్థానం సేవలను ప్రారంభించండి';
+  String get enableLocationServices => 'Enable Location Services';
 
   @override
-  String get openSettings => 'సెట్టింగ్స్ తెరవండి';
+  String get openSettings => 'Open Settings';
 
   @override
-  String get cancel => 'రద్దు చేయండి';
+  String get cancel => 'Cancel';
 
   @override
-  String get nextContinue => 'కొనసాగించు';
+  String get nextContinue => 'CONTINUE';
 
   @override
-  String get proceed => 'ముందుకు సాగండి';
+  String get proceed => 'PROCEED';
 
   @override
-  String get changeLanguage => 'భాష మార్చండి';
+  String get changeLanguage => 'Change Language';
 
   @override
-  String get talkToHarvestBot => 'హార్వెస్ట్ బాట్‌తో మాట్లాడండి';
+  String get talkToHarvestBot => 'Talk to HarvestBot';
 
   @override
-  String get createPost => 'పోస్ట్ సృష్టించండి';
+  String get somethingWentWrong => 'Something went wrong';
 
   @override
-  String get addComment => 'వ్యాఖ్య జోడించండి...';
+  String get checkConnectionAndTryAgain => 'Please check your connection and try again';
 
   @override
-  String get post => 'పోస్ట్';
+  String get tryAgain => 'Try again';
 
   @override
-  String get noPostsYet => 'ఇంకా పోస్ట్‌లు లేవు.';
+  String get currentWeather => 'Current Weather';
 
   @override
-  String get whatsOnYourMind => 'మీ మనసులో ఏమిటి?';
+  String get upcomingForecast => 'Upcoming Forecast';
 
   @override
-  String get welcomeToFarmFlux => 'FarmFlux కు స్వాగతం...';
+  String get tomorrow => 'Tomorrow';
 
   @override
-  String get shareYourThoughts => 'మీ ఆలోచనలను పంచుకోండి, ప్రశ్నలు అడగండి మరియు తోటి రైతులతో కనెక్ట్ అవ్వండి.';
+  String get minTemperature => 'Min:';
 
   @override
-  String get somethingWentWrong => 'ఏదో తప్పు జరిగింది';
+  String get rain => 'Rain';
 
   @override
-  String get checkConnectionAndTryAgain => 'దయచేసి మీ కనెక్షన్‌ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి';
+  String get viewAll => 'View All >';
 
   @override
-  String get tryAgain => 'మళ్లీ ప్రయత్నించండి';
+  String get january => 'January';
 
   @override
-  String get welcomeToCommunity => 'కమ్యూనిటీకి స్వాగతం!';
+  String get february => 'February';
 
   @override
-  String get shareYourFarmingExperiences => 'మీ వ్యవసాయ అనుభవాలు, చిట్కాలను పంచుకోండి మరియు తోటి రైతులతో కనెక్ట్ అవ్వండి';
+  String get march => 'March';
 
   @override
-  String get createFirstPost => 'మొదటి పోస్ట్ సృష్టించండి';
+  String get april => 'April';
 
   @override
-  String get currentWeather => 'ప్రస్తుత వాతావరణం';
+  String get may => 'May';
 
   @override
-  String get upcomingForecast => 'రాబోయే అంచనాలు';
+  String get june => 'June';
 
   @override
-  String get tomorrow => 'రేపు';
+  String get july => 'July';
 
   @override
-  String get minTemperature => 'కనిష్ట:';
+  String get august => 'August';
 
   @override
-  String get rain => 'వర్షం';
+  String get september => 'September';
 
   @override
-  String get viewAll => 'అన్నీ చూడండి >';
+  String get october => 'October';
 
   @override
-  String get january => 'జనవరి';
+  String get november => 'November';
 
   @override
-  String get february => 'ఫిబ్రవరి';
+  String get december => 'December';
 
   @override
-  String get march => 'మార్చి';
+  String get sunday => 'Sun';
 
   @override
-  String get april => 'ఏప్రిల్';
+  String get monday => 'Mon';
 
   @override
-  String get may => 'మే';
+  String get tuesday => 'Tue';
 
   @override
-  String get june => 'జూన్';
+  String get wednesday => 'Wed';
 
   @override
-  String get july => 'జూలై';
+  String get thursday => 'Thu';
 
   @override
-  String get august => 'ఆగస్టు';
+  String get friday => 'Fri';
 
   @override
-  String get september => 'సెప్టెంబర్';
+  String get saturday => 'Sat';
 
   @override
-  String get october => 'అక్టోబర్';
+  String get darkMode => 'Dark Mode';
 
   @override
-  String get november => 'నవంబర్';
+  String get notifications => 'Notifications';
 
   @override
-  String get december => 'డిసెంబర్';
+  String get helpSupport => 'Help & Support';
 
   @override
-  String get sunday => 'ఆది';
+  String get about => 'About';
 
   @override
-  String get monday => 'సోమ';
+  String get helpAndSupportTitle => 'Help & Support';
 
   @override
-  String get tuesday => 'మంగళ';
+  String get appFeaturesTitle => 'App Features';
 
   @override
-  String get wednesday => 'బుధ';
+  String get gettingStartedTitle => 'Getting Started';
 
   @override
-  String get thursday => 'గురు';
+  String get featuresAndUsageTitle => 'Features & Usage';
 
   @override
-  String get friday => 'శుక్ర';
+  String get contactSupportTitle => 'Contact Support';
 
   @override
-  String get saturday => 'శని';
+  String get weatherUpdatesFeature => 'Weather Updates';
 
   @override
-  String get darkMode => 'డార్క్ మోడ్';
+  String get weatherUpdatesDesc => 'Get real-time weather information including temperature, humidity, wind speed, and 3-day forecasts to plan your farming activities.';
 
   @override
-  String get notifications => 'నోటిఫికేషన్లు';
+  String get aiChatFeature => 'HarvestBot AI Assistant';
 
   @override
-  String get helpSupport => 'సహాయం మరియు మద్దతు';
+  String get aiChatDesc => 'Chat with our AI-powered farming expert for personalized advice, crop recommendations, and answers to your agricultural questions.';
 
   @override
-  String get about => 'గురించి';
+  String get multiLanguageFeature => 'Multi-Language Support';
 
   @override
-  String get helpAndSupportTitle => 'సహాయం మరియు మద్దతు';
+  String get multiLanguageDesc => 'Use the app in your preferred language with support for English, Hindi, Tamil, Telugu, and Malayalam.';
 
   @override
-  String get appFeaturesTitle => 'యాప్ లక్షణాలు';
+  String get profileManagementFeature => 'Profile Management';
 
   @override
-  String get gettingStartedTitle => 'ప్రారంభించడం';
+  String get profileManagementDesc => 'Manage your personal information, crop preferences, and location settings for personalized recommendations.';
 
   @override
-  String get featuresAndUsageTitle => 'లక్షణాలు మరియు వినియోగం';
+  String get gettingStartedStep1 => '1. Set up your profile with your location and crop preferences';
 
   @override
-  String get contactSupportTitle => 'మద్దతు సంప్రదించండి';
+  String get gettingStartedStep2 => '2. Allow location access for accurate weather updates';
 
   @override
-  String get weatherUpdatesFeature => 'వాతావరణ నవీకరణలు';
+  String get gettingStartedStep3 => '3. Explore weather forecasts and farming insights on the home screen';
 
   @override
-  String get weatherUpdatesDesc => 'మీ కృషి కార్యకలాపాలను ప్రణాళిక చేయడానికి ఉష్ణోగ్రత, ఆర్ద్రత, గాలి వేగం మరియు 3-రోజుల అంచనాలను కలిగి ఉన్న రియల్-టైమ్ వాతావరణ సమాచారాన్ని పొందండి.';
+  String get gettingStartedStep4 => '4. Chat with HarvestBot for personalized farming advice';
 
   @override
-  String get aiChatFeature => 'హార్వెస్ట్ బాట్ AI సহాయకుడు';
+  String get weatherUsageTitle => 'Using Weather Features';
 
   @override
-  String get aiChatDesc => 'వ్యక్తిగత సలహా, పంట సిఫారసులు మరియు మీ వ్యవసాయ ప్రశ్నలకు సమాధానాలు కోసం మా AI-శక్తి కలిగిన వ్యవసాయ నిపుణుడితో చాట్ చేయండి.';
+  String get weatherUsageDesc => 'View current weather conditions, 3-day forecasts, and 30-day extended forecasts. Tap \'View All\' to see detailed calendar view.';
 
   @override
-  String get communityFeature => 'వ్యవసాయ సమూహం';
+  String get aiChatUsageTitle => 'Using HarvestBot';
 
   @override
-  String get communityDesc => 'ఇతర రైతులతో కనెక్ట్ అవ్వండి, అనుభవాలను పంచుకోండి, ప్రశ్నలు అడగండి మరియు వ్యవసాయ సమూహం నుండి నేర్చుకోండి.';
+  String get aiChatUsageDesc => 'Ask questions about crops, diseases, fertilizers, or any farming topic. The AI provides context-aware responses based on your conversation.';
 
   @override
-  String get multiLanguageFeature => 'బహుభాషా మద్దతు';
+  String get troubleshootingTitle => 'Troubleshooting';
 
   @override
-  String get multiLanguageDesc => 'ఆంగ్లం, హిందీ, తమిళం, తెలుగు మరియు మలయాళం వంటి మీ ఇష్టమైన భాషలో యాప్‌ను ఉపయోగించండి.';
+  String get locationIssues => 'Location Issues';
 
   @override
-  String get profileManagementFeature => 'ప్రొఫైల్ నిర్వహణ';
+  String get locationIssuesDesc => 'Ensure location services are enabled in your device settings for accurate weather data.';
 
   @override
-  String get profileManagementDesc => 'వ్యక్తిగత సమాచారం, పంట ప్రాధాన్యతలు మరియు వ్యక్తిగతీకరించిన సిఫారసుల కోసం స్థానం సెట్టింగ్‌లను నిర్వహించండి.';
+  String get weatherNotLoading => 'Weather Not Loading';
 
   @override
-  String get gettingStartedStep1 => '1. మీ స్థానం మరియు పంట ప్రాధాన్యతలతో మీ ప్రొఫైల్‌ను సెట్అప్ చేయండి';
+  String get weatherNotLoadingDesc => 'Check your internet connection and location permissions. Pull down to refresh the home screen.';
 
   @override
-  String get gettingStartedStep2 => '2. ఖచ్చితమైన వాతావరణ నవీకరణల కోసం స్థానం యాక్సెస్‌ను అనుమతించండి';
+  String get aiNotResponding => 'AI Not Responding';
 
   @override
-  String get gettingStartedStep3 => '3. హోమ్ స్క్రీన్‌లో వాతావరణ అంచనాలు మరియు వ్యవసాయ అంతర్దృష్టులను అన్వేషించండి';
+  String get aiNotRespondingDesc => 'Ensure you have a stable internet connection. Try rephrasing your question if the AI doesn\'t understand.';
 
   @override
-  String get gettingStartedStep4 => '4. వ్యక్తిగతీకరించిన వ్యవసాయ సలహా కోసం హార్వెస్ట్‌బాట్‌తో చాట్ చేయండి';
+  String get contactSupportDesc => 'For additional help or to report issues, you can:';
 
   @override
-  String get gettingStartedStep5 => '5. ఇతర రైతులతో కనెక్ట్ అవ్వడానికి సమూహంలో చేరండి';
+  String get emailSupport => 'Email us at: support@farmflux.com';
 
   @override
-  String get weatherUsageTitle => 'వాతావరణ లక్షణాలను ఉపయోగించడం';
+  String get reportIssue => 'Report issues through the app feedback';
 
   @override
-  String get weatherUsageDesc => 'ప్రస్తుత వాతావరణ పరిస్థితులు, 3-రోజుల అంచనాలు మరియు 30-రోజుల విస్తృత అంచనాలను చూడండి. వివరమైన క్యాలెండర్ వీక్షణ కోసం \'అన్నీ చూడండి\'పై నొక్కండి.';
+  String get visitWebsite => 'Visit our website: www.farmflux.com';
 
   @override
-  String get aiChatUsageTitle => 'హార్వెస్ట్‌బాట్ ఉపయోగించడం';
+  String get appVersion => 'App Version: 2.0.1';
 
   @override
-  String get aiChatUsageDesc => 'పంటలు, వ్యాధులు, ఎరువులు లేదా ఏదైనా వ్యవసాయ అంశం గురించి ప్రశ్నలు అడగండి. మీ సంభాషణ ఆధారంగా AI సందర్భానుసారమైన సమాధానాలను ఇస్తుంది.';
+  String get lastUpdated => 'Last Updated: June 2025';
 
   @override
-  String get communityUsageTitle => 'సమూహ లక్షణాలను ఉపయోగించడం';
+  String get uploadPlantImage => 'Upload Plant Image';
 
   @override
-  String get communityUsageDesc => 'పోస్టులు, ఫోటోలు, అనుభవాలను పంచుకోండి. ఇతరుల పోస్టులపై వ్యాఖ్యానించండి మరియు రైతులతో సంబంధాలు నిర్మించండి.';
+  String get uploadPlantImageDesc => 'Take a clear photo of your plant leaves or upload from gallery to detect pests and diseases.';
 
   @override
-  String get troubleshootingTitle => 'సమస్య పరిష్కారం';
+  String get camera => 'Camera';
 
   @override
-  String get locationIssues => 'స్థానం సమస్యలు';
+  String get gallery => 'Gallery';
 
   @override
-  String get locationIssuesDesc => 'ఖచ్చితమైన వాతావరణ డేటా కోసం మీ డివైస్ సెట్టింగ్స్‌లో స్థానం సేవలు ప్రారంభించండి.';
+  String get analyzing => 'Analyzing...';
 
   @override
-  String get weatherNotLoading => 'వాతావరణం లోడ్ కావడంలేదు';
+  String get analyzingForecast => 'Analyzing 30-day forecast...';
 
   @override
-  String get weatherNotLoadingDesc => 'మీ ఇంటర్నెట్ కనెక్షన్ మరియు స్థానం అనుమతులను తనిఖీ చేయండి. హోమ్ స్క్రీన్‌ను రిఫ్రెష్ చేయడానికి క్రిందికి లాగండి.';
+  String get analyzeImage => 'Analyze Image';
 
   @override
-  String get aiNotResponding => 'AI స్పందించడంలేదు';
+  String get detectionResults => 'Detection Results';
 
   @override
-  String get aiNotRespondingDesc => 'స్థిరమైన ఇంటర్నెట్ కనెక్షన్ ఉందో లేదో చూసుకోండి. AI అర్థం కాకపోతే మీ ప్రశ్నను మళ్లీ అడగండి.';
+  String get noImageSelected => 'No image selected';
 
   @override
-  String get contactSupportDesc => 'అదనపు సహాయం లేదా సమస్యలు నివేదించడానికి, మీరు చేయవచ్చు:';
+  String get uploadImageToGetStarted => 'Upload an image to get started';
 
   @override
-  String get emailSupport => 'మాకు ఈమెయిల్ చేయండి: support@FarmFlux.com';
+  String get analysisComplete => 'Analysis Complete';
 
   @override
-  String get reportIssue => 'యాప్ ఫీడ్‌బ్యాక్ ద్వారా సమస్యలను నివేదించండి';
+  String get noPestsDetected => 'No pests detected in this image';
 
   @override
-  String get visitWebsite => 'మా వెబ్‌సైట్ సందర్శించండి: www.FarmFlux.com';
+  String get cropsHealthyMessage => 'Your crops appear healthy! Continue with regular monitoring and maintain good agricultural practices.';
 
   @override
-  String get appVersion => 'యాప్ వెర్షన్: 2.0.1';
+  String get recommendations => 'Recommendations';
 
   @override
-  String get lastUpdated => 'చివరిగా నవీకరించబడింది: జూన్ 2025';
+  String get confidence => 'Confidence';
 
   @override
-  String get uploadPlantImage => 'మొక్క చిత్రాన్ని అప్‌లోడ్ చేయండి';
+  String get diagnosis => 'Diagnosis';
 
   @override
-  String get uploadPlantImageDesc => 'పురుగులు మరియు వ్యాధులను గుర్తించడానికి మొక్క ఆకుల స్పష్టమైన ఫోటో తీయండి లేదా గ్యాలరీ నుండి అప్‌లోడ్ చేయండి.';
+  String get causalAgent => 'Causal Agent';
 
   @override
-  String get camera => 'కెమెరా';
+  String get analysisError => 'Analysis Error';
 
   @override
-  String get gallery => 'గ్యాలరీ';
+  String get analysisErrorDesc => 'Unable to analyze the image. Please try again with a clearer photo.';
 
   @override
-  String get analyzing => 'విశ్లేషిస్తోంది...';
+  String get readyToAnalyze => 'Ready to analyze';
 
   @override
-  String get analyzingForecast => '30-రోజుల అంచనాలు విశ్లేషిస్తోంది...';
+  String get uploadImageAndAnalyze => 'Upload an image and tap \"Analyze\" to detect pests and get recommendations';
 
   @override
-  String get analyzeImage => 'చిత్రాన్ని విశ్లేషించండి';
+  String get scanAgain => 'Scan Again';
 
   @override
-  String get detectionResults => 'గుర్తింపు ఫలితాలు';
+  String get saveResult => 'Save Result';
 
   @override
-  String get noImageSelected => 'చిత్రం ఎంచుకోబడలేదు';
+  String get resultSaved => 'Result saved';
 
   @override
-  String get uploadImageToGetStarted => 'ప్రారంభించడానికి చిత్రాన్ని అప్‌లోడ్ చేయండి';
+  String get uploadImageFirst => 'Upload an image first';
 
   @override
-  String get analysisComplete => 'విశ్లేషణ పూర్తయింది';
+  String get tapAnalyzeToStart => 'Tap the analyze button to start detection';
 
   @override
-  String get noPestsDetected => 'ఈ చిత్రంలో పురుగులు గుర్తించబడలేదు';
+  String get selectImageFromCameraOrGallery => 'Select an image from camera or gallery';
 
   @override
-  String get cropsHealthyMessage => 'మీ పంటలు ఆరోగ్యంగా కనిపిస్తున్నాయి! రెగ్యులర్ మానిటరింగ్ కొనసాగించండి మరియు మంచి వ్యవసాయ పద్ధతులను కొనసాగించండి.';
+  String get failedToAnalyzeImage => 'Failed to analyze image';
 
   @override
-  String get recommendations => 'సిఫారసులు';
+  String get howToUse => 'How to use';
 
   @override
-  String get confidence => 'విశ్వాసం';
+  String get takeClearPhotos => 'Take clear, well-lit photos of plant leaves';
 
   @override
-  String get diagnosis => 'నిర్ధారణ';
+  String get focusOnAffectedAreas => 'Focus on affected areas with visible symptoms';
 
   @override
-  String get causalAgent => 'కారక ఏజెంట్';
+  String get avoidBlurryImages => 'Avoid blurry or dark images';
 
   @override
-  String get analysisError => 'విశ్లేషణ లోపం';
+  String get includeMultipleLeaves => 'Include multiple leaves if possible';
 
   @override
-  String get analysisErrorDesc => 'చిత్రాన్ని విశ్లేషించలేకపోయింది. దయచేసి స్పష్టమైన ఫోటోతో మళ్లీ ప్రయత్నించండి.';
+  String get gotIt => 'Got it';
 
   @override
-  String get readyToAnalyze => 'విశ్లేషించడానికి సిద్ధం';
+  String get basedOn30DayForecast => 'Based on 30-day weather forecast';
 
   @override
-  String get uploadImageAndAnalyze => 'చిత్రాన్ని అప్‌లోడ్ చేసి పురుగులను గుర్తించడానికి మరియు సిఫారసులు పొందడానికి \"విశ్లేషించండి\"పై టాప్ చేయండి';
+  String get basedOnCurrentConditions => 'Based on current weather conditions';
 
   @override
-  String get scanAgain => 'మళ్లీ స్కాన్ చేయండి';
+  String get personalInformation => 'Personal Information';
 
   @override
-  String get saveResult => 'ఫలితాన్ని సేవ్ చేయండి';
+  String get updateYourProfileDetails => 'Update your profile details';
 
   @override
-  String get resultSaved => 'ఫలితం సేవ్ చేయబడింది';
+  String get fullName => 'Full Name';
 
   @override
-  String get uploadImageFirst => 'మొదట చిత్రాన్ని అప్‌లోడ్ చేయండి';
+  String get enterYourFullName => 'Enter your full name';
 
   @override
-  String get tapAnalyzeToStart => 'గుర్తింపును ప్రారంభించడానికి విశ్లేషణ బటన్‌ను టాప్ చేయండి';
+  String get emailAddress => 'Email Address';
 
   @override
-  String get selectImageFromCameraOrGallery => 'కెమెరా లేదా గ్యాలరీ నుండి చిత్రాన్ని ఎంచుకోండి';
+  String get enterYourEmailAddress => 'Enter your email address';
 
   @override
-  String get failedToAnalyzeImage => 'చిత్రాన్ని విశ్లేషించడంలో విఫలమైంది';
+  String get enterYourPhoneNumber => 'Enter your phone number';
 
   @override
-  String get howToUse => 'ఎలా ఉపయోగించాలి';
+  String get saveChanges => 'Save Changes';
 
   @override
-  String get takeClearPhotos => 'మొక్క ఆకుల స్పష్టమైన, బాగా వెలుగుతున్న ఫోటోలు తీయండి';
+  String get changeProfilePicture => 'Change Profile Picture';
 
   @override
-  String get focusOnAffectedAreas => 'కనిపించే లక్షణాలతో ప్రభావిత ప్రాంతాలపై దృష్టి పెట్టండి';
+  String get remove => 'Remove';
 
   @override
-  String get avoidBlurryImages => 'అస్పష్టమైన లేదా చీకటి చిత్రాలను నివారించండి';
+  String get profileUpdatedSuccessfully => 'Your profile has been updated successfully.';
 
   @override
-  String get includeMultipleLeaves => 'వీలైతే అనేక ఆకులను చేర్చండి';
+  String get mobileNumberUpdatedSuccessfully => 'Your mobile number has been updated successfully.';
 
   @override
-  String get gotIt => 'అర్థమైంది';
+  String get pleaseEnterVerificationCode => 'Please enter the verification code sent to your phone';
 
   @override
-  String get basedOn30DayForecast => '30-రోజుల వాతావరణ అంచనా ఆధారంగా';
+  String get otpAutoFilledSuccessfully => 'OTP auto-filled successfully!';
 
   @override
-  String get basedOnCurrentConditions => 'ప్రస్తుత వాతావరణ పరిస్థితుల ఆధారంగా';
+  String get otpWillBeFilledAutomatically => 'OTP will be filled automatically when SMS is received';
 
   @override
-  String get personalInformation => 'వ్యక్తిగత సమాచారం';
+  String get didntReceiveOTP => 'Didn\'t receive OTP? ';
 
   @override
-  String get updateYourProfileDetails => 'మీ ప్రొఫైల్ వివరాలను అప్‌డేట్ చేయండి';
-
-  @override
-  String get fullName => 'పూర్తి పేరు';
-
-  @override
-  String get enterYourFullName => 'మీ పూర్తి పేరును నమోదు చేయండి';
-
-  @override
-  String get emailAddress => 'ఈమెయిల్ చిరునామా';
-
-  @override
-  String get enterYourEmailAddress => 'మీ ఈమెయిల్ చిరునామాను నమోదు చేయండి';
-
-  @override
-  String get enterYourPhoneNumber => 'మీ ఫోన్ నంబర్‌ను నమోదు చేయండి';
-
-  @override
-  String get saveChanges => 'మార్పులను సేవ్ చేయండి';
-
-  @override
-  String get changeProfilePicture => 'ప్రొఫైల్ చిత్రాన్ని మార్చండి';
-
-  @override
-  String get remove => 'తొలగించు';
-
-  @override
-  String get profileUpdatedSuccessfully => 'మీ ప్రొఫైల్ విజయవంతంగా అప్‌డేట్ చేయబడింది.';
-
-  @override
-  String get mobileNumberUpdatedSuccessfully => 'మీ మొబైల్ నంబర్ విజయవంతంగా అప్‌డేట్ చేయబడింది.';
-
-  @override
-  String get pleaseEnterVerificationCode => 'దయచేసి మీ ఫోన్‌కు పంపబడిన వెరిఫికేషన్ కోడ్‌ను నమోదు చేయండి';
-
-  @override
-  String get otpAutoFilledSuccessfully => 'OTP విజయవంతంగా ఆటో-ఫిల్ చేయబడింది!';
-
-  @override
-  String get otpWillBeFilledAutomatically => 'SMS అందినప్పుడు OTP ఆటోమేటిక్‌గా భర్తీ చేయబడుతుంది';
-
-  @override
-  String get didntReceiveOTP => 'OTP రాలేదా? ';
-
-  @override
-  String get resend => 'మళ్లీ పంపు';
+  String get resend => 'Resend';
 
   @override
   String resendInSeconds(Object seconds) {
-    return '$secondsలో మళ్లీ పంపు';
+    return 'Resend in ${seconds}s';
   }
 
   @override
-  String get otpResentSuccessfully => 'OTP విజయవంతంగా మళ్లీ పంపబడింది';
-
-  @override
-  String get aiDisclaimer => 'AI-ఉత్పత్తి ఫలితాల వివరణ';
-
-  @override
-  String get aiDisclaimerDesc => 'ఇక్కడ ఇచ్చిన నిర్ధారణలు మరియు సిఫారసులు AI ద్వారా రూపొందించబడ్డవి మరియు వాటిలో పొరపాట్లు ఉండవచ్చు. ముఖ్యమైన నిర్ణయాల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి మరియు ఈ సమాచారాన్ని అదనపు మార్గదర్శకంగా మాత్రమే ఉపయోగించండి.';
+  String get otpResentSuccessfully => 'OTP resent successfully';
 }

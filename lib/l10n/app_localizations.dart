@@ -161,18 +161,6 @@ abstract class AppLocalizations {
   /// **'HarvestBot'**
   String get harvestBot;
 
-  /// No description provided for @pestDetection.
-  ///
-  /// In en, this message translates to:
-  /// **'Pest Detection'**
-  String get pestDetection;
-
-  /// No description provided for @community.
-  ///
-  /// In en, this message translates to:
-  /// **'Community'**
-  String get community;
-
   /// No description provided for @yourFarmingCompanion.
   ///
   /// In en, this message translates to:
@@ -413,48 +401,6 @@ abstract class AppLocalizations {
   /// **'Talk to HarvestBot'**
   String get talkToHarvestBot;
 
-  /// No description provided for @createPost.
-  ///
-  /// In en, this message translates to:
-  /// **'Create Post'**
-  String get createPost;
-
-  /// No description provided for @addComment.
-  ///
-  /// In en, this message translates to:
-  /// **'Add a comment...'**
-  String get addComment;
-
-  /// No description provided for @post.
-  ///
-  /// In en, this message translates to:
-  /// **'Post'**
-  String get post;
-
-  /// No description provided for @noPostsYet.
-  ///
-  /// In en, this message translates to:
-  /// **'No posts yet.'**
-  String get noPostsYet;
-
-  /// No description provided for @whatsOnYourMind.
-  ///
-  /// In en, this message translates to:
-  /// **'What\'s on your mind?'**
-  String get whatsOnYourMind;
-
-  /// No description provided for @welcomeToFarmFlux.
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to the FarmFlux...'**
-  String get welcomeToFarmFlux;
-
-  /// No description provided for @shareYourThoughts.
-  ///
-  /// In en, this message translates to:
-  /// **'Share your thoughts, ask questions, and connect with fellow farmers.'**
-  String get shareYourThoughts;
-
   /// No description provided for @somethingWentWrong.
   ///
   /// In en, this message translates to:
@@ -472,24 +418,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try again'**
   String get tryAgain;
-
-  /// No description provided for @welcomeToCommunity.
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to the Community!'**
-  String get welcomeToCommunity;
-
-  /// No description provided for @shareYourFarmingExperiences.
-  ///
-  /// In en, this message translates to:
-  /// **'Share your farming experiences, tips, and connect with fellow farmers'**
-  String get shareYourFarmingExperiences;
-
-  /// No description provided for @createFirstPost.
-  ///
-  /// In en, this message translates to:
-  /// **'Create first post'**
-  String get createFirstPost;
 
   /// No description provided for @currentWeather.
   ///
@@ -719,18 +647,6 @@ abstract class AppLocalizations {
   /// **'Chat with our AI-powered farming expert for personalized advice, crop recommendations, and answers to your agricultural questions.'**
   String get aiChatDesc;
 
-  /// No description provided for @communityFeature.
-  ///
-  /// In en, this message translates to:
-  /// **'Farming Community'**
-  String get communityFeature;
-
-  /// No description provided for @communityDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Connect with fellow farmers, share experiences, ask questions, and learn from the farming community.'**
-  String get communityDesc;
-
   /// No description provided for @multiLanguageFeature.
   ///
   /// In en, this message translates to:
@@ -779,12 +695,6 @@ abstract class AppLocalizations {
   /// **'4. Chat with HarvestBot for personalized farming advice'**
   String get gettingStartedStep4;
 
-  /// No description provided for @gettingStartedStep5.
-  ///
-  /// In en, this message translates to:
-  /// **'5. Join the community to connect with other farmers'**
-  String get gettingStartedStep5;
-
   /// No description provided for @weatherUsageTitle.
   ///
   /// In en, this message translates to:
@@ -808,18 +718,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ask questions about crops, diseases, fertilizers, or any farming topic. The AI provides context-aware responses based on your conversation.'**
   String get aiChatUsageDesc;
-
-  /// No description provided for @communityUsageTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Using Community Features'**
-  String get communityUsageTitle;
-
-  /// No description provided for @communityUsageDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'Share posts, photos, and experiences. Comment on others\' posts and build connections with fellow farmers.'**
-  String get communityUsageDesc;
 
   /// No description provided for @troubleshootingTitle.
   ///
@@ -1228,18 +1126,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'OTP resent successfully'**
   String get otpResentSuccessfully;
-
-  /// No description provided for @aiDisclaimer.
-  ///
-  /// In en, this message translates to:
-  /// **'AI-Generated Results Disclaimer'**
-  String get aiDisclaimer;
-
-  /// No description provided for @aiDisclaimerDesc.
-  ///
-  /// In en, this message translates to:
-  /// **'The diagnosis and recommendations provided are generated by AI and may contain errors. Please consult agricultural experts for critical decisions and use this information as a supplementary guide only.'**
-  String get aiDisclaimerDesc;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

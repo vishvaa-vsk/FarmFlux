@@ -39,12 +39,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get harvestBot => 'हार्वेस्टबॉट';
 
   @override
-  String get pestDetection => 'कीट पहचान';
-
-  @override
-  String get community => 'समुदाय';
-
-  @override
   String get yourFarmingCompanion => 'आपका कृषि साथी';
 
   @override
@@ -181,27 +175,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get talkToHarvestBot => 'हार्वेस्टबॉट से बात करें';
 
   @override
-  String get createPost => 'पोस्ट बनाएं';
-
-  @override
-  String get addComment => 'टिप्पणी जोड़ें...';
-
-  @override
-  String get post => 'पोस्ट';
-
-  @override
-  String get noPostsYet => 'अभी तक कोई पोस्ट नहीं।';
-
-  @override
-  String get whatsOnYourMind => 'आपके मन में क्या है?';
-
-  @override
-  String get welcomeToFarmFlux => 'FarmFlux में आपका स्वागत है...';
-
-  @override
-  String get shareYourThoughts => 'अपने विचार साझा करें, प्रश्न पूछें, और साथी किसानों से जुड़ें।';
-
-  @override
   String get somethingWentWrong => 'कुछ गलत हो गया';
 
   @override
@@ -209,15 +182,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get tryAgain => 'पुनः प्रयास करें';
-
-  @override
-  String get welcomeToCommunity => 'समुदाय में आपका स्वागत है!';
-
-  @override
-  String get shareYourFarmingExperiences => 'अपने कृषि अनुभव, सुझाव साझा करें और साथी किसानों से जुड़ें';
-
-  @override
-  String get createFirstPost => 'पहली पोस्ट बनाएं';
 
   @override
   String get currentWeather => 'वर्तमान मौसम';
@@ -334,12 +298,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get aiChatDesc => 'व्यक्तिगत सलाह, फसल सिफारिशों और आपके कृषि प्रश्नों के उत्तर के लिए हमारे AI-संचालित कृषि विशेषज्ञ से चैट करें।';
 
   @override
-  String get communityFeature => 'कृषि समुदाय';
-
-  @override
-  String get communityDesc => 'साथी किसानों से जुड़ें, अनुभव साझा करें, प्रश्न पूछें और कृषि समुदाय से सीखें।';
-
-  @override
   String get multiLanguageFeature => 'बहुभाषी समर्थन';
 
   @override
@@ -364,9 +322,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get gettingStartedStep4 => '4. व्यक्तिगत कृषि सलाह के लिए हार्वेस्टबॉट से चैट करें';
 
   @override
-  String get gettingStartedStep5 => '5. अन्य किसानों से जुड़ने के लिए समुदाय में शामिल हों';
-
-  @override
   String get weatherUsageTitle => 'मौसम फीचर्स का उपयोग';
 
   @override
@@ -377,12 +332,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get aiChatUsageDesc => 'फसलों, बीमारियों, उर्वरकों या किसी भी कृषि विषय के बारे में प्रश्न पूछें। AI आपकी बातचीत के आधार पर संदर्भ-जागरूक उत्तर प्रदान करता है।';
-
-  @override
-  String get communityUsageTitle => 'समुदाय फीचर्स का उपयोग';
-
-  @override
-  String get communityUsageDesc => 'पोस्ट, फोटो और अनुभव साझा करें। दूसरों की पोस्ट पर टिप्पणी करें और साथी किसानों के साथ संबंध बनाएं।';
 
   @override
   String get troubleshootingTitle => 'समस्या निवारण';
@@ -589,10 +538,4 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get otpResentSuccessfully => 'OTP सफलतापूर्वक फिर से भेजा गया';
-
-  @override
-  String get aiDisclaimer => 'AI-जनरेटेड परिणाम अस्वीकरण';
-
-  @override
-  String get aiDisclaimerDesc => 'प्रदान किए गए निदान और सिफारिशें AI द्वारा उत्पन्न की गई हैं और इनमें त्रुटियां हो सकती हैं। कृपया महत्वपूर्ण निर्णयों के लिए कृषि विशेषज्ञों से सलाह लें और इस जानकारी का उपयोग केवल एक पूरक गाइड के रूप में करें।';
 }

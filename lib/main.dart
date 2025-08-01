@@ -79,8 +79,8 @@ void _preloadAvatarsAsync() {
   // Run avatar preloading in the background to avoid blocking main thread
   WidgetsBinding.instance.addPostFrameCallback((_) async {
     try {
-      // Preload HarvestBot avatar
-      await AvatarUtils.preloadAvatar(userId: 'harvestbot');
+      // Preload FluxCore avatar
+      await AvatarUtils.preloadAvatar(userId: 'fluxcore');
 
       // Preload guest user avatar
       await AvatarUtils.preloadAvatar(userId: 'guest');

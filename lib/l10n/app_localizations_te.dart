@@ -9,52 +9,52 @@ class AppLocalizationsTe extends AppLocalizations {
   AppLocalizationsTe([String locale = 'te']) : super(locale);
 
   @override
-  String get appTitle => 'FarmFlux';
+  String get appTitle => 'హార్వెస్ట్ హబ్';
 
   @override
-  String get welcomeMessage => 'Welcome to FarmFlux!';
+  String get welcomeMessage => 'హార్వెస్ట్ హబ్‌కు స్వాగతం!';
 
   @override
-  String get selectLanguage => 'Select Preferred Language';
+  String get selectLanguage => 'ఇష్టమైన భాషను ఎంచుకోండి';
 
   @override
-  String get english => 'English';
+  String get english => 'ఆంగ్లం';
 
   @override
-  String get hindi => 'Hindi';
+  String get hindi => 'హిందీ';
 
   @override
-  String get tamil => 'Tamil';
+  String get tamil => 'తమిళం';
 
   @override
-  String get telugu => 'Telugu';
+  String get telugu => 'తెలుగు';
 
   @override
-  String get malayalam => 'Malayalam';
+  String get malayalam => 'మలయాళం';
 
   @override
-  String get home => 'Home';
+  String get home => 'హోమ్';
 
   @override
-  String get harvestBot => 'HarvestBot';
+  String get harvestBot => 'ఫ్లక్స్కోర్';
 
   @override
-  String get yourFarmingCompanion => 'Your farming companion';
+  String get yourFarmingCompanion => 'మీ కృషి సహచరుడు';
 
   @override
-  String get editProfileSettings => 'Edit Profile Settings';
+  String get editProfileSettings => 'ప్రొఫైల్ సెట్టింగ్స్ ఎడిట్ చేయండి';
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'లాగ్ అవుట్';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'లోడ్ చేస్తోంది...';
 
   @override
-  String get errorLoadingUserData => 'Error loading user data';
+  String get errorLoadingUserData => 'ఉపయోగదారు డేటా లోడ్ చేయడంలో పొరపాటు';
 
   @override
-  String get weatherForecast => 'Weather Forecast';
+  String get weatherForecast => 'వాతావరణ అంచనాలు';
 
   @override
   String feelsLike(Object value) {
@@ -169,19 +169,19 @@ class AppLocalizationsTe extends AppLocalizations {
   String get proceed => 'PROCEED';
 
   @override
-  String get changeLanguage => 'Change Language';
+  String get changeLanguage => 'భాష మార్చండి';
 
   @override
-  String get talkToHarvestBot => 'Talk to HarvestBot';
+  String get talkToHarvestBot => 'ఫ్లక్స్కోర్‌తో మాట్లాడండి';
 
   @override
-  String get somethingWentWrong => 'Something went wrong';
+  String get somethingWentWrong => 'ఏదో తప్పు జరిగింది';
 
   @override
-  String get checkConnectionAndTryAgain => 'Please check your connection and try again';
+  String get checkConnectionAndTryAgain => 'దయచేసి మీ కనెక్షన్‌ని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి';
 
   @override
-  String get tryAgain => 'Try again';
+  String get tryAgain => 'మళ్లీ ప్రయత్నించండి';
 
   @override
   String get currentWeather => 'Current Weather';
@@ -292,10 +292,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get weatherUpdatesDesc => 'Get real-time weather information including temperature, humidity, wind speed, and 3-day forecasts to plan your farming activities.';
 
   @override
-  String get aiChatFeature => 'HarvestBot AI Assistant';
+  String get aiChatFeature => 'ఫ్లక్స్కోర్ AI సహాయకుడు';
 
   @override
-  String get aiChatDesc => 'Chat with our AI-powered farming expert for personalized advice, crop recommendations, and answers to your agricultural questions.';
+  String get aiChatDesc => 'వ్యక్తిగత సలహా, పంట సిఫారసులు మరియు మీ వ్యవసాయ ప్రశ్నలకు సమాధానాలు కోసం మా AI-శక్తి కలిగిన వ్యవసాయ నిపుణుడితో చాట్ చేయండి.';
 
   @override
   String get multiLanguageFeature => 'Multi-Language Support';
@@ -319,7 +319,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get gettingStartedStep3 => '3. Explore weather forecasts and farming insights on the home screen';
 
   @override
-  String get gettingStartedStep4 => '4. Chat with HarvestBot for personalized farming advice';
+  String get gettingStartedStep4 => '4. వ్యక్తిగతీకరించిన వ్యవసాయ సలహా కోసం ఫ్లక్స్కోర్‌తో చాట్ చేయండి';
 
   @override
   String get weatherUsageTitle => 'Using Weather Features';
@@ -328,10 +328,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get weatherUsageDesc => 'View current weather conditions, 3-day forecasts, and 30-day extended forecasts. Tap \'View All\' to see detailed calendar view.';
 
   @override
-  String get aiChatUsageTitle => 'Using HarvestBot';
+  String get aiChatUsageTitle => 'ఫ్లక్స్కోర్ ఉపయోగించడం';
 
   @override
-  String get aiChatUsageDesc => 'Ask questions about crops, diseases, fertilizers, or any farming topic. The AI provides context-aware responses based on your conversation.';
+  String get aiChatUsageDesc => 'పంటలు, వ్యాధులు, ఎరువులు లేదా ఏదైనా వ్యవసాయ అంశం గురించి ప్రశ్నలు అడగండి. మీ సంభాషణ ఆధారంగా AI సందర్భానుసారమైన సమాధానాలను ఇస్తుంది.';
 
   @override
   String get troubleshootingTitle => 'Troubleshooting';

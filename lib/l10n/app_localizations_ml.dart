@@ -36,7 +36,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get home => 'ഹോം';
 
   @override
-  String get harvestBot => 'HarvestBot';
+  String get harvestBot => 'ഫ്ലക്സ്കോർ';
 
   @override
   String get yourFarmingCompanion => 'നിങ്ങളുടെ കൃഷി കൂട്ടുകാരൻ';
@@ -172,7 +172,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get changeLanguage => 'ഭാഷ മാറ്റുക';
 
   @override
-  String get talkToHarvestBot => 'HarvestBot-നോട് സംസാരിക്കുക';
+  String get talkToHarvestBot => 'ഫ്ലക്സ്കോർ-നോട് സംസാരിക്കുക';
 
   @override
   String get somethingWentWrong => 'എന്തോ തെറ്റ് സംഭവിച്ചു';
@@ -292,7 +292,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get weatherUpdatesDesc => 'നിങ്ങളുടെ കൃഷി പ്രവർത്തനങ്ങൾ ആസൂത്രണം ചെയ്യാൻ താപനില, ആർദ്രത, കാറ്റിന്റെ വേഗത, 3-ദിവസ പ്രവചനങ്ങൾ എന്നിവ ഉൾപ്പെടെയുള്ള തത്സമയ കാലാവസ്ഥാ വിവരങ്ങൾ നേടുക.';
 
   @override
-  String get aiChatFeature => 'HarvestBot AI അസിസ്റ്റന്റ്';
+  String get aiChatFeature => 'ഫ്ലക്സ്കോർ AI അസിസ്റ്റന്റ്';
 
   @override
   String get aiChatDesc => 'വ്യക്തിഗത ഉപദേശം, വിള ശുപാർശകൾ, നിങ്ങളുടെ കാർഷിക ചോദ്യങ്ങൾക്കുള്ള ഉത്തരങ്ങൾ എന്നിവയ്ക്കായി ഞങ്ങളുടെ AI-ശക്തമായ കൃഷി വിദഗ്ധനുമായി ചാറ്റ് ചെയ്യുക.';
@@ -319,7 +319,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get gettingStartedStep3 => '3. ഹോം സ്ക്രീനിൽ കാലാവസ്ഥാ പ്രവചനങ്ങളും കൃഷി ഉൾക്കാഴ്ചകളും പര്യവേക്ഷണം ചെയ്യുക';
 
   @override
-  String get gettingStartedStep4 => '4. വ്യക്തിഗത കൃഷി ഉപദേശത്തിനായി HarvestBot-മായി ചാറ്റ് ചെയ്യുക';
+  String get gettingStartedStep4 => '4. വ്യക്തിഗത കൃഷി ഉപദേശത്തിനായി ഫ്ലക്സ്കോർ-മായി ചാറ്റ് ചെയ്യുക';
 
   @override
   String get weatherUsageTitle => 'കാലാവസ്ഥാ സവിശേഷതകൾ ഉപയോഗിക്കുന്നത്';
@@ -328,7 +328,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get weatherUsageDesc => 'നിലവിലെ കാലാവസ്ഥാ അവസ്ഥകൾ, 3-ദിവസ പ്രവചനങ്ങൾ, 30-ദിവസ വിപുലീകൃത പ്രവചനങ്ങൾ എന്നിവ കാണുക. വിശദമായ കലണ്ടർ കാഴ്ച കാണാൻ \'എല്ലാം കാണുക\' ടാപ്പ് ചെയ്യുക.';
 
   @override
-  String get aiChatUsageTitle => 'HarvestBot ഉപയോഗിക്കുന്നത്';
+  String get aiChatUsageTitle => 'ഫ്ലക്സ്കോർ ഉപയോഗിക്കുന്നത്';
 
   @override
   String get aiChatUsageDesc => 'വിളകൾ, രോഗങ്ങൾ, വളങ്ങൾ, അല്ലെങ്കിൽ ഏതെങ്കിലും കൃഷി വിഷയത്തെക്കുറിച്ച് ചോദ്യങ്ങൾ ചോദിക്കുക. AI നിങ്ങളുടെ സംഭാഷണത്തെ അടിസ്ഥാനമാക്കി സന്ദർഭ-അവബോധമുള്ള മറുപടികൾ നൽകുന്നു.';

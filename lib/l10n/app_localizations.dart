@@ -158,7 +158,7 @@ abstract class AppLocalizations {
   /// No description provided for @harvestBot.
   ///
   /// In en, this message translates to:
-  /// **'HarvestBot'**
+  /// **'FluxCore'**
   String get harvestBot;
 
   /// No description provided for @yourFarmingCompanion.
@@ -398,7 +398,7 @@ abstract class AppLocalizations {
   /// No description provided for @talkToHarvestBot.
   ///
   /// In en, this message translates to:
-  /// **'Talk to HarvestBot'**
+  /// **'Talk to FluxCore'**
   String get talkToHarvestBot;
 
   /// No description provided for @somethingWentWrong.
@@ -638,7 +638,7 @@ abstract class AppLocalizations {
   /// No description provided for @aiChatFeature.
   ///
   /// In en, this message translates to:
-  /// **'HarvestBot AI Assistant'**
+  /// **'FluxCore AI Assistant'**
   String get aiChatFeature;
 
   /// No description provided for @aiChatDesc.
@@ -692,7 +692,7 @@ abstract class AppLocalizations {
   /// No description provided for @gettingStartedStep4.
   ///
   /// In en, this message translates to:
-  /// **'4. Chat with HarvestBot for personalized farming advice'**
+  /// **'4. Chat with FluxCore for personalized farming advice'**
   String get gettingStartedStep4;
 
   /// No description provided for @weatherUsageTitle.
@@ -710,7 +710,7 @@ abstract class AppLocalizations {
   /// No description provided for @aiChatUsageTitle.
   ///
   /// In en, this message translates to:
-  /// **'Using HarvestBot'**
+  /// **'Using FluxCore'**
   String get aiChatUsageTitle;
 
   /// No description provided for @aiChatUsageDesc.

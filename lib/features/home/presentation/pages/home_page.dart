@@ -240,17 +240,17 @@ class _MainScreenState extends State<MainScreen>
 
     // Track navigation performance
     trackNavigation('navigation_tap', () {
-      // Only handle HarvestBot navigation since we only have Home screen
+      // Only handle FluxCore navigation since we only have Home screen
       if (index == 1) {
-        // Handle HarvestBot navigation separately
+        // Handle FluxCore navigation separately
         _isNavigating = true;
-        NavigationPerformanceTracker.startNavigation('harvestbot_navigation');
+        NavigationPerformanceTracker.startNavigation('fluxcore_navigation');
 
         Navigator.push(
           context,
           NavigationUtils.buildOptimizedRoute(const AIChatPage()),
         ).then((_) {
-          NavigationPerformanceTracker.endNavigation('harvestbot_navigation');
+          NavigationPerformanceTracker.endNavigation('fluxcore_navigation');
           _isNavigating = false;
         });
         return;
@@ -1506,36 +1506,6 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 height: 1,
                 margin: const EdgeInsets.symmetric(horizontal: 24),
                 color: AppConstants.dividerGray,
-              ),
-
-              // Dark Mode Section
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 8,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      loc.darkMode,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: AppConstants.textDark,
-                      ),
-                    ),
-                    Switch(
-                      value: false,
-                      onChanged: (value) {
-                        // TODO: Implement dark mode logic
-                      },
-                      activeColor: AppConstants.primaryGreen,
-                      inactiveThumbColor: AppConstants.switchInactive,
-                      inactiveTrackColor: AppConstants.lightGray,
-                    ),
-                  ],
-                ),
               ),
 
               // Separator after Dark Mode

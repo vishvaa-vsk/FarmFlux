@@ -36,7 +36,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get home => 'Home';
 
   @override
-  String get harvestBot => 'HarvestBot';
+  String get harvestBot => 'FluxCore';
 
   @override
   String get yourFarmingCompanion => 'Your farming companion';
@@ -172,7 +172,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get changeLanguage => 'Change Language';
 
   @override
-  String get talkToHarvestBot => 'Talk to HarvestBot';
+  String get talkToHarvestBot => 'Talk to FluxCore';
 
   @override
   String get somethingWentWrong => 'Something went wrong';
@@ -292,7 +292,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get weatherUpdatesDesc => 'Get real-time weather information including temperature, humidity, wind speed, and 3-day forecasts to plan your farming activities.';
 
   @override
-  String get aiChatFeature => 'HarvestBot AI Assistant';
+  String get aiChatFeature => 'FluxCore AI Assistant';
 
   @override
   String get aiChatDesc => 'Chat with our AI-powered farming expert for personalized advice, crop recommendations, and answers to your agricultural questions.';
@@ -319,7 +319,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gettingStartedStep3 => '3. Explore weather forecasts and farming insights on the home screen';
 
   @override
-  String get gettingStartedStep4 => '4. Chat with HarvestBot for personalized farming advice';
+  String get gettingStartedStep4 => '4. Chat with FluxCore for personalized farming advice';
 
   @override
   String get weatherUsageTitle => 'Using Weather Features';
@@ -328,7 +328,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get weatherUsageDesc => 'View current weather conditions, 3-day forecasts, and 30-day extended forecasts. Tap \'View All\' to see detailed calendar view.';
 
   @override
-  String get aiChatUsageTitle => 'Using HarvestBot';
+  String get aiChatUsageTitle => 'Using FluxCore';
 
   @override
   String get aiChatUsageDesc => 'Ask questions about crops, diseases, fertilizers, or any farming topic. The AI provides context-aware responses based on your conversation.';

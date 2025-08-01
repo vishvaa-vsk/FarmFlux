@@ -36,7 +36,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get home => 'होम';
 
   @override
-  String get harvestBot => 'हार्वेस्टबॉट';
+  String get harvestBot => 'फ्लक्सकोर';
 
   @override
   String get yourFarmingCompanion => 'आपका कृषि साथी';
@@ -172,7 +172,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get changeLanguage => 'भाषा बदलें';
 
   @override
-  String get talkToHarvestBot => 'हार्वेस्टबॉट से बात करें';
+  String get talkToHarvestBot => 'फ्लक्सकोर से बात करें';
 
   @override
   String get somethingWentWrong => 'कुछ गलत हो गया';
@@ -292,7 +292,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get weatherUpdatesDesc => 'अपनी कृषि गतिविधियों की योजना बनाने के लिए तापमान, आर्द्रता, हवा की गति और 3-दिन के पूर्वानुमान सहित रीयल-टाइम मौसम जानकारी प्राप्त करें।';
 
   @override
-  String get aiChatFeature => 'हार्वेस्टबॉट AI असिस्टेंट';
+  String get aiChatFeature => 'फ्लक्सकोर AI असिस्टेंट';
 
   @override
   String get aiChatDesc => 'व्यक्तिगत सलाह, फसल सिफारिशों और आपके कृषि प्रश्नों के उत्तर के लिए हमारे AI-संचालित कृषि विशेषज्ञ से चैट करें।';
@@ -319,7 +319,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get gettingStartedStep3 => '3. होम स्क्रीन पर मौसम पूर्वानुमान और कृषि अंतर्दृष्टि देखें';
 
   @override
-  String get gettingStartedStep4 => '4. व्यक्तिगत कृषि सलाह के लिए हार्वेस्टबॉट से चैट करें';
+  String get gettingStartedStep4 => '4. व्यक्तिगत कृषि सलाह के लिए फ्लक्सकोर के साथ चैट करें';
 
   @override
   String get weatherUsageTitle => 'मौसम फीचर्स का उपयोग';
@@ -328,7 +328,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get weatherUsageDesc => 'वर्तमान मौसम स्थितियों, 3-दिन के पूर्वानुमान और 30-दिन के विस्तृत पूर्वानुमान देखें। विस्तृत कैलेंडर दृश्य देखने के लिए \'सभी देखें\' पर टैप करें।';
 
   @override
-  String get aiChatUsageTitle => 'हार्वेस्टबॉट का उपयोग';
+  String get aiChatUsageTitle => 'फ्लक्सकोर का उपयोग';
 
   @override
   String get aiChatUsageDesc => 'फसलों, बीमारियों, उर्वरकों या किसी भी कृषि विषय के बारे में प्रश्न पूछें। AI आपकी बातचीत के आधार पर संदर्भ-जागरूक उत्तर प्रदान करता है।';

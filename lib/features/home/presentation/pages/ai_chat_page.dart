@@ -120,7 +120,7 @@ class _AIChatPageState extends State<AIChatPage> {
       'sender': 'ai',
       'text': '''नमस्ते! 🌾 வணக்கம்! నమస్కారం! നമസ്കാരം! Hello!
 
-Welcome to **HarvestBot** - your multilingual farming assistant! 🚜
+Welcome to **FarmFlux** - your multilingual farming assistant! 🚜
 
 I'm here to help Indian farmers with:
 • **Crop Management** - Planting, growing, harvesting advice
@@ -264,7 +264,7 @@ Just ask me anything in your preferred language! 🌱''',
             'models/gemini-1.5-flash', // Use Flash for better quota limits and faster responses
         apiKey: dotenv.env['GEMINI_API_KEY']!,
         systemInstruction: Content.text(
-          '''You are HarvestBot, an expert agricultural AI assistant specifically designed for Indian farmers. Your core expertise includes:
+          '''You are FluxCore, an expert agricultural AI assistant specifically designed for Indian farmers. Your core expertise includes:
 
 **AGRICULTURAL SPECIALIZATION:**
 • Crop cultivation techniques for Indian climate zones (tropical, subtropical, arid, semi-arid)

@@ -56,3 +56,6 @@ ios/Runner/GoogleService-Info.plist
 
 lib/core/services/gemini_service_account.json
 android/build/*
+upload-keystore.jks
+keystore_base64.txt
+key.properties.template

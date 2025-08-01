@@ -4,19 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Release tag (e.g., v1.0.0)'
+        description: "Release tag (e.g., v1.0.0)"
         required: true
         type: string
       release_name:
-        description: 'Release name (e.g., FarmFlux v1.0.0)'
+        description: "Release name (e.g., FarmFlux v1.0.0)"
         required: true
         type: string
       release_description:
-        description: 'Release description/changelog'
+        description: "Release description/changelog"
         required: true
         type: string
       prerelease:
-        description: 'Mark as pre-release'
+        description: "Mark as pre-release"
         required: false
         default: false
         type: boolean
@@ -27,88 +27,103 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v4
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    # Set up Java (required for Android builds)
-    - name: Set up JDK
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'zulu'
-        java-version: '17'
+      # Set up Java (required for Android builds)
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: "zulu"
+          java-version: "17"
 
-    # Set up Flutter
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.32.0'
+      # Set up Flutter
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.32.0"
 
-    # Create .env file
-    - name: Create .env file
-      run: echo "${{ secrets.ENV_FILE_CONTENT }}" > .env
+      # Create .env file first (before any Flutter operations)
+      - name: Create .env file
+        run: |
+          echo "Creating .env file..."
+          echo "${{ secrets.ENV_FILE_CONTENT }}" > .env
+          echo "✅ .env file created"
+          if [ -f .env ]; then
+            echo "📝 .env file exists and contains $(wc -l < .env) lines"
+          else
+            echo "❌ .env file creation failed"
+            exit 1
+          fi
 
-    # Create gemini_service_account.json file
-    - name: Create gemini_service_account.json
-      run: echo "${{ secrets.GEMINI_SERVICE_ACCOUNT }}" > lib/core/services/gemini_service_account.json
+      # Create gemini_service_account.json file
+      - name: Create gemini_service_account.json
+        run: |
+          echo "Creating gemini service account file..."
+          mkdir -p lib/core/services
+          echo "${{ secrets.GEMINI_SERVICE_ACCOUNT }}" > lib/core/services/gemini_service_account.json
+          echo "✅ Gemini service account file created"
 
-    # Clean Flutter Cache
-    - name: Clean Flutter Cache
-      run: flutter clean
+      # Clean Flutter Cache
+      - name: Clean Flutter Cache
+        run: flutter clean
 
-    - name: Install dependencies
-      run: flutter pub get
+      # Install dependencies
+      - name: Install dependencies
+        run: flutter pub get
 
-    - name: Run Flutter localization codegen
-      run: flutter gen-l10n
+      # Run Flutter localization codegen
+      - name: Run Flutter localization codegen
+        run: flutter gen-l10n
 
-    # Add keystore file for signing
-    - name: Add keystore file
-      run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/upload-keystore.jks
+      # Add keystore file for signing
+      - name: Add keystore file
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/upload-keystore.jks
 
-    # Add key.properties file
-    - name: Add key.properties file
-      run: echo "${{ secrets.KEYSTORE_PROPERTIES }}" > android/key.properties
+      # Add key.properties file
+      - name: Add key.properties file
+        run: echo "${{ secrets.KEYSTORE_PROPERTIES }}" > android/key.properties
 
-    # Build the signed APK
-    - name: Build Signed APK
-      run: flutter build apk --release --split-per-abi
+      # Build the signed APK
+      - name: Build Signed APK
+        run: flutter build apk --release --split-per-abi
 
-    # Get app version from pubspec.yaml
-    - name: Get app version
-      id: get_version
-      run: |
-        VERSION=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2)
-        echo "app_version=$VERSION" >> $GITHUB_OUTPUT
+      # Get app version from pubspec.yaml
+      - name: Get app version
+        id: get_version
+        run: |
+          VERSION=$(grep '^version:' pubspec.yaml | cut -d ' ' -f 2)
+          echo "app_version=$VERSION" >> $GITHUB_OUTPUT
 
-    # Create a release and upload the APK
-    - name: Create Release
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: >
+      # Create a release and upload the APK
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: >
             build/app/outputs/flutter-apk/app-release.apk,
             build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk,
             build/app/outputs/flutter-apk/app-arm64-v8a-release.apk,
-        token: ${{ secrets.TOKEN }}
-        tag: ${{ github.event.inputs.release_tag }}
-        name: ${{ github.event.inputs.release_name }}
-        body: |
-          ${{ github.event.inputs.release_description }}
+          token: ${{ secrets.TOKEN }}
+          tag: ${{ github.event.inputs.release_tag }}
+          name: ${{ github.event.inputs.release_name }}
+          body: |
+            ${{ github.event.inputs.release_description }}
 
-          ## App Version
-          **Version:** ${{ steps.get_version.outputs.app_version }}
-          
-          ## Downloads
-          - **Universal APK**: `app-release.apk` (Works on all devices)
-          - **ARM64 APK**: `app-arm64-v8a-release.apk` (Modern 64-bit devices)
-          - **ARMv7 APK**: `app-armeabi-v7a-release.apk` (Older 32-bit devices)
+            ## App Version
+            **Version:** ${{ steps.get_version.outputs.app_version }}
 
-          ## Installation Instructions
-          1. Download the appropriate APK for your device
-          2. Enable "Unknown Sources" in Android settings
-          3. Install the APK file
+            ## Downloads
+            - **Universal APK**: `app-release.apk` (Works on all devices)
+            - **ARM64 APK**: `app-arm64-v8a-release.apk` (Modern 64-bit devices)
+            - **ARMv7 APK**: `app-armeabi-v7a-release.apk` (Older 32-bit devices)
 
-          ---
-          Built with ❤️ for Farmers around the world.
-        prerelease: ${{ github.event.inputs.prerelease }}
-        draft: false
+            ## Installation Instructions
+            1. Download the appropriate APK for your device
+            2. Enable "Unknown Sources" in Android settings
+            3. Install the APK file
+
+            ---
+            Built with ❤️ for Farmers around the world.
+          prerelease: ${{ github.event.inputs.prerelease }}
+          draft: false

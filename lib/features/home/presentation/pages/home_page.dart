@@ -19,7 +19,6 @@ import '../../../auth/presentation/pages/edit_profile_page.dart';
 import '../../../auth/presentation/pages/phone_auth_page.dart';
 import 'ai_chat_page.dart';
 import 'extended_forecast_page.dart';
-import 'help_support_page.dart';
 import 'about_page.dart';
 
 class FarmFluxApp extends StatelessWidget {
@@ -1571,20 +1570,6 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         onTap: () async {
                           Navigator.pop(context);
                           await _showLanguageSelector(context, loc);
-                        },
-                      ),
-
-                      _buildSimpleDrawerItem(
-                        icon: Icons.help_outline,
-                        title: loc.helpSupport,
-                        onTap: () {
-                          Navigator.pop(context);
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const HelpSupportPage(),
-                            ),
-                          );
                         },
                       ),
                       _buildSimpleDrawerItem(

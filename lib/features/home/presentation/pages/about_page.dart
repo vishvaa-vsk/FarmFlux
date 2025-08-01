@@ -11,7 +11,7 @@ class AboutPage extends StatelessWidget {
   // App information constants
   static const String appVersion = '1.0.0';
   static const String buildNumber = '1';
-  static const String releaseDate = 'June 2025';
+  static const String releaseDate = 'July 2025';
   static const String githubUrl = 'https://github.com/vishvaa-vsk/FarmFlux';
   static const String licenseType = 'MIT License';
 

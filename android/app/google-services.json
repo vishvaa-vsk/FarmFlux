@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "685447383281",
+    "project_id": "farmflux-44493",
+    "storage_bucket": "farmflux-44493.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685447383281:android:aab8ccf6327a033d788150",
+        "android_client_info": {
+          "package_name": "com.hacktheharvest.farmflux"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-qSvIFhY04RCNC-I-m6ujhXiAQniqpo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

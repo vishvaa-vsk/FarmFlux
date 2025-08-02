@@ -46,7 +46,6 @@ app.*.map.json
 
 # Sensitive configuration files
 .env
-google-services.json
 ios/Runner/GoogleService-Info.plist
 
 # Keep templates for reference

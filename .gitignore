@@ -47,7 +47,6 @@ app.*.map.json
 # Sensitive configuration files
 .env
 google-services.json
-firebase_options.dart
 ios/Runner/GoogleService-Info.plist
 
 # Keep templates for reference

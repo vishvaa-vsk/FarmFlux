@@ -56,22 +56,20 @@ android {
         versionName = flutter.versionName
     }
 
-    /*
     signingConfigs {
         create("release") {
             keyAlias = keystoreProperties["keyAlias"]?.toString() ?: ""
             keyPassword = keystoreProperties["keyPassword"]?.toString() ?: ""
-            storeFile = file(keystoreProperties["storeFile"]?.toString() ?: "") // Corrected path
+            storeFile = file(keystoreProperties["storeFile"]?.toString() ?: "")
             storePassword = keystoreProperties["storePassword"]?.toString() ?: ""
         }
     }
-    */
 
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            isShrinkResources = false // Disabled shrinkResources
-            // signingConfig = signingConfigs.getByName("release")
+            isShrinkResources = false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }
